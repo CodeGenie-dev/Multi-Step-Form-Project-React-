@@ -6,7 +6,7 @@ import ButtonGroup from "./ButtonGroup";
 import RightImage from "./RightImage";
 
 export default function App() {
-  // const [stage, setStage] = React.useState(0);
+  const [stage, setStage] = React.useState(0);
   return (
     <div className="App">
       <div className="LeftContainer">
