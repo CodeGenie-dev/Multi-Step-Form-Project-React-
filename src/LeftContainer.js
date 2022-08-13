@@ -1,9 +1,3 @@
-// const LEFTCONTAINER_TITLE_DATA = [
-//   "Apply to work with our agency",
-//   "What's your budget",
-//   "Anything else we should know?",
-//   "Thank you"
-// ];
-export default function LeftContainer() {
-  return <h1>Apply to work with our agency</h1>;
+export default function LeftContainer(props) {
+  return <h1>{props.title}</h1>;
 }

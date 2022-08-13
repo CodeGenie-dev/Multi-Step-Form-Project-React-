@@ -22,7 +22,7 @@ body {
   text-align: left;
   color: white;
   width: 50%;
-  padding: 0 70px;
+  padding: 0 50px;
 }
 .emailInput {
   background: none;
@@ -48,6 +48,22 @@ body {
 }
 .rightImage > img {
   height: 100%;
+}
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.buttonContainer > input {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    background: #745e5e;
+    border: 1px solid white;
+    color: white;
+    width: 30%;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 600px) {

@@ -1,7 +1,7 @@
-export default function ButtonGroup() {
+export default function ButtonGroup(props) {
   return (
     <div>
-      <button className="btn">Next</button>
+      <button onClick={props.onClick} className="btn">Next</button>
     </div>
   );
 }
