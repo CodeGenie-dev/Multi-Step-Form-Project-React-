@@ -1,46 +1,82 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
 
+body {
+  margin: 0;
+}
+
 .App {
   font-family: Roboto;
   text-align: center;
-  padding: 10px 10px;
   display: flex;
   max-width: 1200px;
   margin: auto;
+  height: 100vh;
+  width: 100%;
 }
 .LeftContainer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #745e5e;
+  background: #745e5e;
   box-sizing: border-box;
   text-align: left;
   color: white;
   width: 50%;
-  height: 90vh;
   padding: 0 70px;
 }
 .emailInput {
   background: none;
   border: none;
-  padding: 10px 0;
-  margin: 30px 0;
+  padding: 10px 5px;
+  margin: 40px 0;
   border-bottom: 1px solid white;
   width: 80%;
+  color: white;
 }
 .emailInput::placeholder {
   color: grey;
 }
 .btn {
   padding: 5px 15px;
+  color: #745e5e;
   cursor: pointer;
 }
-img {
-  width: 100%;
-  height: 90vh;
-}
 .rightImage {
+  height: 100%;
   width: 50%;
+  overflow: hidden;
+}
+.rightImage > img {
+  min-width: 100%;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.buttonContainer > input {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 15px;
+  background: #745e5e;
+  border: 1px solid white;
+  color: white;
+  width: 30%;
+  cursor: pointer;
+  margin: 30px 0 60px;
+}
+.textArea > input {
+  background: #745e5e;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  width: 100%;
+  margin: 30px 0 60px;
+  padding: 10px 5px;
+}
+.hide {
+  display: none;
 }
 
 @media only screen and (max-width: 600px) {
