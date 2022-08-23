@@ -47,6 +47,7 @@ body {
   overflow: hidden;
 }
 .rightImage > img {
+  height: 100%;
   min-width: 100%;
 }
 .buttonContainer {
@@ -75,8 +76,18 @@ body {
   margin: 30px 0 60px;
   padding: 10px 5px;
 }
+
+input:focus {
+  outline: none;
+}
 .hide {
   display: none;
+}
+
+.buttonContainer > input:focus {
+  border: none;
+  color: #745e5e;
+  background: white;
 }
 
 @media only screen and (max-width: 600px) {
